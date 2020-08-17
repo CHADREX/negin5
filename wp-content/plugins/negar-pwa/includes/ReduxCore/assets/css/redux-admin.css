@@ -3651,10 +3651,6 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow {
     width: 40% !important;
     vertical-align: bottom !important;
 }
-.redux-container .ui-widget-content .screenshot {
-    display: inline-block !important;
-    width: 40% !important;
-}
 
 .redux-container .ui-accordion{
     width: 100% !important;

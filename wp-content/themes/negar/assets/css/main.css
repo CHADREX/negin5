@@ -5694,7 +5694,7 @@ p.price del span.woocommerce-Price-currencySymbol, span.price del span.woocommer
     background-color: #fff;
     margin: 0;
     color: #333;
-    left: 100px;
+    left: 45px;
     right: 10px;
     top: 5px;
     height: 35px;
@@ -5706,6 +5706,12 @@ p.price del span.woocommerce-Price-currencySymbol, span.price del span.woocommer
     opacity: 1
 }
 
+.ajax-search .button-search-pro::before {
+    font-family: "Font Awesome 5 pro";
+}
+.top-header-icon #ajax-search.close .fal::before {
+    content: "\f00d";
+}
 .no-toolbar-by-scroll .ajax-search, .ajax-search.hide {
     left: -100%;
     opacity: 0;
@@ -9451,22 +9457,21 @@ form.woocommerce-ResetPassword.lost_reset_password {
     color: #333;
     position: absolute;
     right: -100%;
+    transition-duration: 0.5s;
+    z-index: 2;
+    padding: 0 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,.16);
+    border-radius: 20px;
+    border: 0;
+    height: 35px;
+    width: 85%;
+    top: 5px;
 }
 
 .searchbar-input input.search-field.hide {
-    display: block;
     right: 10px;
-    top: 5px;
-    width: 65%;
-    height: 35px;
-    border: 0;
-    box-shadow: 0 0 15px rgba(0,0,0,.16);
-    border-radius: 20px;
-    padding: 0 10px;
-    z-index: 2;
-    transition-duration: 0.5s;
-    opacity: 1;
 }
+
 a.searchbar-cancel {
     display: none;
 }

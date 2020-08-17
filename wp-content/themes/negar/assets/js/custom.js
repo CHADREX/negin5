@@ -181,12 +181,9 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         ajaxsearch.toggleClass('hide');
         defultsearchB.toggleClass('hide');
+        ajaxsearchB.toggleClass('close');
     });
-    ajaxsearchB.toggle(function() {
-        $(this).html('<i class="fal fa-times"></i>');
-    }, function() {
-        $(this).html('<i class="fal fa-search"></i>');
-    });
+
 
     var count = 0
     $('#category-modal-button').click(function (e) {

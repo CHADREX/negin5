@@ -68,13 +68,11 @@ global $avn_negar;
                   action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <div class="searchbar-input">
                     <input type="search" class="search-field" placeholder="<?php if ( empty( get_search_query() ) ) {
-						echo 'Search products&hellip;';
+						echo 'نام محصول را وارد کرده و اینتر را بزنید ...';
 					} else {
 						echo get_search_query();
 					} ?>" name="s">
-                    <a href="#" class="searchbar-clear"></a>
                 </div>
-                <a href="#" class="searchbar-cancel"><?php _e( 'Cancel', 'woomobify' ); ?></a>
                 <input type="hidden" name="post_type" value="product">
             </form>
 		<?php }
