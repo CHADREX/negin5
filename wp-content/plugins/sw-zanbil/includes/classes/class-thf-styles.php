@@ -71,7 +71,8 @@ if ( !class_exists( 'TCW_STYLES' ) ) {
                 ],
             ];
 
-            wp_localize_script( 'jquery', 'THF', apply_filters( 'Themesfa/js_main_vars', $js_vars ) );
+            wp_localize_script( 'thf-customize-wc', 'THF', apply_filters( 'Themesfa/js_main_vars', $js_vars ) );
+            wp_localize_script( 'thf-customize-wc-ajax-search', 'THF', apply_filters( 'Themesfa/js_main_vars', $js_vars ) );
         }
 
 
