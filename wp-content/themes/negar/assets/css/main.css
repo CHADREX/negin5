@@ -1099,7 +1099,6 @@ input:invalid, textarea:invalid {
 .suha-sidenav-wrapper {
     position: fixed;
 	transition-duration: 500ms;
-    width: 100%;
     z-index: 999999;
     top: 0;
     height: 100%;
@@ -2137,7 +2136,7 @@ input:invalid, textarea:invalid {
     height: 26px;
     background-color: #fac74b;
     border-radius: 50%;
-    transition: .3s ease all, left .3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
     font-family: 'Font Awesome 5 Pro';
     font-weight: 300;
     color: #fff;
@@ -8856,7 +8855,7 @@ h2.wc-bacs-bank-details-heading {
     background: #f94e60;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .woocommerce .woocommerce-pagination ul.page-numbers li, .woocommerce-page .woocommerce-pagination ul.page-numbers li {
@@ -9165,7 +9164,7 @@ nav.navigation.pagination {
 
 .single.single-product .woocommerce-message {
     background-color: #ffffff;
-    box-shadow: 0 0 15px rgb(0 0 0 / 16%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
     border: 0;
     margin-top: 40px;
     position: fixed;
@@ -9475,4 +9474,13 @@ a.searchbar-cancel {
 .woocommerce div.product form.cart div.quantity span {
     margin-left: 10px;
     font-size: 12px;
+}
+
+@media only screen and (max-width: 320px) {
+    .add-shortcut-btn {
+        height: 70vh;
+    }
+    .woocommerce div.product form.cart div.quantity span{
+        display: none;
+    }
 }
