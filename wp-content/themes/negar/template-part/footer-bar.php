@@ -38,11 +38,12 @@ if ( ( is_product_category() || is_shop() ) && is_active_sidebar( 'ngr_filter' )
 				<?php
 				$i = 0;
 				foreach ( $avn_option['enable'] as $key => $value ) {
+				    if ($key=='placebo'){ continue; }
 					if ( file_exists( NGR_PATH . '/template-part/toolbar-icon/' . $key . '.php' ) ) {
 						require NGR_PATH . '/template-part/toolbar-icon/' . $key . '.php';
 					}
 					$i ++;
-					if ( $i == 4 ) {
+					if ( $i == 3 ) {
 						echo '</ul><ul class="buttonbar-second">';
 					}
 				}
