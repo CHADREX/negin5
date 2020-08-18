@@ -9449,6 +9449,9 @@ form.woocommerce-ResetPassword.lost_reset_password {
 
 [data-theme="dark"] .woocommerce-checkout #payment div.payment_box::before {
     border: 1em solid #1f2433;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
 }
 
 .searchbar-input input.search-field {
@@ -9479,6 +9482,40 @@ a.searchbar-cancel {
 .woocommerce div.product form.cart div.quantity span {
     margin-left: 10px;
     font-size: 12px;
+}
+
+.woocommerce-cart .shop_table .product-name,
+.woocommerce-cart .shop_table .product-price,
+.woocommerce-cart .shop_table .product-quantity,
+.woocommerce-cart .shop_table .product-subtotal{
+    display: none;
+}
+
+.woocommerce-checkout input.pw-gateway-submit.button{
+    background-color: #f94e60;
+    color: #fff;
+    font-weight: 400;
+    padding: 11px;
+    border-radius: 25px;
+    text-align: center;
+    border: 0;
+    font-size: 14px;
+    font-family: inherit;
+    width: 45%;
+    margin-right: 20px;
+}
+
+.woocommerce-checkout .pw-gateway-cancel.button.cancel{
+    background-color: #e8e8e8;
+    color: #fff;
+    font-weight: 400;
+    padding: 11px;
+    border-radius: 25px;
+    text-align: center;
+    border: 0;
+    font-size: 14px;
+    font-family: inherit;
+    width: 45%;
 }
 
 @media only screen and (max-width: 320px) {

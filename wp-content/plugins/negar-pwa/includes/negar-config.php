@@ -109,12 +109,6 @@ Redux::setSection( $opt_name, array(
 			'data'     => 'pages',
 			'subtitle' => 'این برگه به عنوان دکمه در پایین سایدبار نمایش داده می شود.'
 		),
-		array(
-			'id'      => 'clean_head',
-			'type'    => 'switch',
-			'title'   => 'عدم لود فایل های اضافی در هدر',
-			'default' => true,
-		),
 	)
 ) );
 
@@ -488,3 +482,24 @@ Redux::setSection( $opt_name, array(
 		),
 	)
 ) );
+
+Redux::setSection( $opt_name, array(
+    'title'  => 'سایر',
+    'id'     => 'others',
+    'desc'   => '',
+    'icon'   => 'el el-quote-right ',
+    'fields' => array(
+        array(
+            'id'      => 'clean_head',
+            'type'    => 'switch',
+            'title'   => 'عدم لود فایل های اضافی در هدر',
+            'default' => true,
+        ),
+        array(
+            'id'      => 'header_html',
+            'type'    => 'ace_editor',
+            'title'   => 'کدهای هدر',
+            'subtitle' => 'کد های وارد شده دقیقا در هدر سایت شما وارد میشود.',
+        ),
+    )
+));
