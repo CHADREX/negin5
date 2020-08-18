@@ -7406,7 +7406,8 @@ body.woocommerce-account .footer-nav-area, body.woocommerce-account .negar-foote
 }
 
 .customer-account .login-box, .customer-account .register-box {
-    height: calc(100vh - 52px)
+    height: calc(100vh - 52px);
+    overflow: scroll;
 }
 
 .customer-account .account-header {
@@ -7487,7 +7488,8 @@ body.woocommerce-account .footer-nav-area, body.woocommerce-account .negar-foote
 
 .customer-account .register-box.open {
     transform: translateY(-100%);
-    visibility: visible
+    visibility: visible;
+    overflow: scroll;
 }
 
 .negar-footer-part {
@@ -8358,7 +8360,8 @@ p.woocommerce-LostPassword.lost_password a {
     margin-bottom: 20px
 }
 
-.login-box #signup-link, .register-box #signin-link {
+
+.login-box #signup-link {
     color: #000;
     font-size: 10px;
     position: absolute;
@@ -8366,10 +8369,19 @@ p.woocommerce-LostPassword.lost_password a {
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 9
 }
 
-.login-box #signup-link:before, .register-box #signin-link:before {
+.register-box #signin-link {
+    color: #000;
+    font-size: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.login-box #signup-link:before,
+.register-box #signin-link:before {
     content: '\f077';
     font-family: 'Font Awesome 5 Pro';
     position: absolute;
@@ -8380,7 +8392,7 @@ p.woocommerce-LostPassword.lost_password a {
     border-radius: 10px 10px 0 0;
     left: 50%;
     margin-left: -15px;
-    z-index: -1;
+    z-index: 1;
     color: #a2a2a2;
     animation: arrowUpLarge 2s infinite
 }

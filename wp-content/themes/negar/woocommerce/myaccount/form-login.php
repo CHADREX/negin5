@@ -92,7 +92,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                 <i class="fal fa-plus"></i>
             </div>
 
-            <span>ثبتنام</span>
+            <span>ثبت نام</span>
         </div>
 
         <form method="post"
