@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <?php AVN_Negar_Theme::setPWA();?>
+	<?php
+	if (!isset($_COOKIE['PWACookie'])) {
+		setcookie('PWACookie', 'PWA', time() + (86400 * 10), COOKIEPATH, COOKIE_DOMAIN);
+	}
+	?>
 	<?php wp_head(); ?>
 
 </head>

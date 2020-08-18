@@ -85,8 +85,8 @@ jQuery(document).ready(function ($) {
 
     var bannerTop = new Swiper('.image-banner-slider', {
         spaceBetween: 10,
-		slidesPerView: 1.1,
-		centeredSlides: true,
+        slidesPerView: 1.1,
+        centeredSlides: true,
         loop: true,
         loopedSlides: 5, //looped slides should be the same
         thumbs: {
@@ -265,8 +265,8 @@ jQuery(document).ready(function ($) {
     })
 
     let pwa = $('.add-shortcut-btn')
-   if( pwa.data('cookie') === 0)
-       pwa.addClass('close');
+    if( pwa.data('cookie') === 0)
+        pwa.addClass('hidden');
 
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
