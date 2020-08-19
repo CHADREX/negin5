@@ -5971,13 +5971,13 @@ ul.jcaa_attr_select li > div > div {
 }
 
 .woocommerce div.product form.cart div.quantity {
-    position: absolute;
-    margin-top: 5px;
-    left: -10px
+    float: left;
+    margin-top: 7px;
 }
 
 .woocommerce div.product form.cart .button {
-    padding: 18px
+    padding: 18px;
+    margin-left: 0;
 }
 
 .woocommerce div.product .woocommerce-product-rating {
@@ -5987,28 +5987,33 @@ ul.jcaa_attr_select li > div > div {
 }
 
 .woocommerce div.product form.cart div.quantity input.input-text.qty.text {
-    border: 0;
     color: #68cc45;
     font-weight: 700;
     background-color: transparent;
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
-    box-shadow: unset
+    box-shadow: unset;
+    width: 25px;
+    padding: 0;
+    border-radius: 0;
 }
 
 .woocommerce div.product form.cart div.quantity i.minus {
-    margin-left: -10px;
     border: 1px solid #ddd;
-    padding: 3px;
-    border-radius: 25px
+    padding: 5px 7px;
+    border-radius: 25px;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: bold;
+    font-style: inherit;
 }
 
 .woocommerce div.product form.cart div.quantity i.plus {
-    margin-right: -10px;
-    margin-left: 10px;
     border: 1px solid #ddd;
-    padding: 3px;
-    border-radius: 25px
+    padding: 5px 7px;
+    border-radius: 25px;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: bold;
+    font-style: inherit;
 }
 
 button.single_add_to_cart_button.button {
@@ -7819,10 +7824,12 @@ tr.woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity span {
 }
 
 tr.woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity i {
-    margin-left: -10px;
     border: 1px solid #ddd;
-    padding: 3px;
-    border-radius: 25px
+    padding: 5px 7px;
+    border-radius: 25px;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: bold;
+    font-style: inherit;
 }
 
 tr.woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity {
@@ -7830,14 +7837,15 @@ tr.woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity {
 }
 
 tr.woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity input {
-    border: 0;
     color: #68cc45;
     font-weight: 700;
     background-color: transparent;
-    width: 35px;
-    box-shadow: unset;
     -moz-appearance: textfield;
-    -webkit-appearance: textfield
+    -webkit-appearance: textfield;
+    box-shadow: unset;
+    width: 25px;
+    padding: 0;
+    border-radius: 0;
 }
 
 .woocommerce table.shop_table tbody tr td.actions {
@@ -7917,7 +7925,7 @@ tr.woocommerce-cart-form__cart-item.cart_item .product-quantity .quantity input 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
     width: 75% !important;
     margin: 0 !important;
-    padding: 1em;
+    padding: 1.3em;
     font-family: inherit;
     right: 0
 }
@@ -9491,11 +9499,6 @@ a.searchbar-cancel {
     display: none;
 }
 
-.woocommerce div.product form.cart div.quantity span {
-    margin-left: 10px;
-    font-size: 12px;
-}
-
 .woocommerce-cart .shop_table .product-name,
 .woocommerce-cart .shop_table .product-price,
 .woocommerce-cart .shop_table .product-quantity,
@@ -9534,8 +9537,9 @@ a.searchbar-cancel {
     .add-shortcut-btn {
         height: 70vh;
     }
-    .woocommerce div.product form.cart div.quantity span{
-        display: none;
+
+    .single.single-product .woocommerce-message a.button.wc-forward{
+        font-size: 10px;
     }
 }
 
@@ -9560,6 +9564,15 @@ a.searchbar-cancel {
     text-align: right;
     margin-bottom: 10px;
     border-radius: 10px;
+    font-size: 13px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+    padding: 10px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content p {
+    font-size: 12px;
 }
 
 .woocommerce-MyAccount-navigation ul li.is-active {
@@ -9607,4 +9620,16 @@ div#my-account-menu {
 
 [data-theme="dark"] #my-account-menu ul.myaccount-menu li a {
     background-color: #1f2433;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
