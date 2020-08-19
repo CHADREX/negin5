@@ -293,3 +293,13 @@ if ( ! class_exists( 'AVN_Negar_Theme_Style' ) ) {
 
 }
 new AVN_Negar_Theme_Style();
+
+add_action( 'init', 'ngr_setcookie' );
+
+function ngr_setcookie (){
+
+	if (!isset($_COOKIE['PWACookie'])) {
+		setcookie('PWACookie', 'PWA', time() + (86400 * 10));
+	}
+
+}
