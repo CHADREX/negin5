@@ -9077,7 +9077,6 @@ nav.navigation.pagination {
 
 .woocommerce-checkout .woocommerce-form.woocommerce-form-login.login {
     margin: -25px 15px;
-    z-index: -2;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
     border-radius: 0;
     display: block
@@ -9632,4 +9631,18 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.woocommerce-checkout .woocommerce-form-login-toggle {
+    z-index: 1;
+    position: relative;
+}
+
+.woocommerce-checkout .input-text {
+    box-shadow: none;
+    border: 1px solid #e8e8e8;
+}
+
+[data-theme="dark"] .woocommerce-checkout .input-text {
+    border: 1px solid rgb(232 232 232 / 19%) !important;
 }
