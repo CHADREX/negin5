@@ -7,7 +7,7 @@ $opt_name = 'avn_negar';
 
 $args    = [
 	'display_name'        => 'نسخه موبایل نگار',
-	'display_version'     => '5.0.0',
+	'display_version'     => '5.0.2',
 	'menu_title'          => 'نسخه موبایل نگار',
 	'customizer'          => false,
 	'dev_mode'            => false,

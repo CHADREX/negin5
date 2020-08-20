@@ -294,11 +294,11 @@ if ( ! class_exists( 'AVN_Negar_Theme_Style' ) ) {
 }
 new AVN_Negar_Theme_Style();
 
-add_action( 'init', 'ngr_setcookie' );
+add_action( 'template_redirect', 'ngr_setcookie', 20 );
 
 function ngr_setcookie (){
 
-	if (!isset($_COOKIE['PWACookie'])) {
+	if (!isset($_COOKIE['PWACookie']) && is_front_page()) {
 		setcookie('PWACookie', 'PWA', time() + (86400 * 10));
 	}
 
